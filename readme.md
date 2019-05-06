@@ -19,7 +19,7 @@ inefficient_sort <- function(x) {
     # Test whether the vector is already in order
     in_order <- all(solve[1:(length(x) - 1)] < solve[2:length(x)])
     
-    # Throw the deck of cards on the group and hope you pick them up in order
+    # Throw the deck of cards on the ground and hope you pick them up in order
     while (!in_order) {
         solve <- x[sample(x = 1:length(x), size = length(x),
                           replace = FALSE)]
